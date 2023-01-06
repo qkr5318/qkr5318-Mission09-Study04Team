@@ -549,6 +549,7 @@ a{
     cursor: default;
     position: relative;
     top: 700px;
+    display: none;
   }
   
   .contents{
@@ -1208,7 +1209,10 @@ footer{
 
   .contents{
     position: relative;
-    top: 200px;
+    top: 300px;
+  }
+  .stylepick{
+    display: none;
   }
 }
 
