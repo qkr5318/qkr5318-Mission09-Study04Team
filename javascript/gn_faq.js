@@ -198,7 +198,7 @@ $(function () {
       {
         src: "",
         video: {
-          src: ["../resources/videos/cycle.mp4"],
+          src: ["../resources/videos/gn_cycle.mp4"],
           loop: true,
           mute: true,
         },
@@ -206,7 +206,7 @@ $(function () {
     ],
   });
 });
-// 베가스 영역
+//flex box안에 베가스 영역
 $(function () {
   // $('body').vegas({
   //     delay: 3000,
@@ -296,7 +296,9 @@ $(function () {
 (function () {
   var w = window;
   if (w.ChannelIO) {
-    return (window.console.error || window.console.log || function () {})("ChannelIO script included twice.");
+    return (window.console.error || window.console.log || function () {})(
+      "ChannelIO script included twice."
+    );
   }
   var ch = function () {
     ch.c(arguments);
@@ -382,7 +384,9 @@ const kakaoMapMarker = (obj) => {
 
 // 따릉이 대여소 데이터 받기
 const getData = async () => {
-  let res = await fetch(`http://openapi.seoul.go.kr:8088/6c4366596f716b72393962686e6469/json/tbCycleStationInfo/1/1000/`);
+  let res = await fetch(
+    `http://openapi.seoul.go.kr:8088/6c4366596f716b72393962686e6469/json/tbCycleStationInfo/1/1000/`
+  );
   let data = await res.json();
   console.log(data);
   let rows = data.stationInfo.row;
