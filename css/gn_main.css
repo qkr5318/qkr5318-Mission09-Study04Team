@@ -1,0 +1,350 @@
+@charset "utf-8";
+@font-face {
+  font-family: "제주돌담체";
+  src: url(../resources/font/EF_jejudoldam.ttf);
+}
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Coda+Caption&display=swap");
+body {
+  height: 100%;
+}
+
+footer {
+  display: block;
+  margin-top: 500px;
+}
+/* top 텍스트 영역 */
+.top_text {
+  text-align: center;
+  font-family: "제주돌담체";
+  color: rgb(62, 216, 236);
+  opacity: 0.4;
+  text-decoration: 4px 4px 0px black, 8px 8px 0px black, 12px 12px 0px black !important;
+}
+.top_text > h1 > span {
+  color: darkred;
+}
+.top_text h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+/* 슬라이드 영역 */
+.gallery_wrap {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.gallery_slide {
+  width: 100%;
+}
+
+.bximg {
+  width: 100%;
+  height: auto;
+}
+
+/* .top_slide {
+  width: 100% !important;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  position: relative !important;
+  overflow: hidden;
+}
+.slideimg {
+  width: 100%;
+  position: absolute;
+  transition-delay: 1s;
+  padding: 0;
+  margin: 0;
+}
+
+.top_slide > a {
+  width: 100%;
+}
+.top_slide > a > img {
+  width: 100%;
+  /* vertical-align: middle; 
+} */
+
+.img_content {
+  display: none;
+}
+
+/* 베가스 영역 */
+.mp4_wrap {
+  width: 100% !important;
+
+  position: relative;
+}
+.mp4 {
+  width: 80% !important;
+}
+
+/* 쿠키영역 */
+#popupWindow {
+  width: 250px;
+  height: 200px;
+  border: 1px solid red;
+  position: fixed;
+  z-index: 3;
+  display: block;
+  text-align: center;
+  background-color: aliceblue;
+  top: -700px;
+}
+.imgtext1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Alfa Slab One", cursive;
+}
+.imgtext2 {
+  font-size: 15px;
+}
+.closeWrap {
+  position: fixed;
+}
+.closeBtn {
+  width: 45px;
+  height: 25px;
+  margin-top: 90px;
+  margin-left: 28px;
+  text-align: center;
+  background-color: white;
+  border-bottom: none;
+  font-weight: bold;
+  font-family: fantasy;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.closeBtn:hover {
+  cursor: pointer;
+  color: lightgreen;
+}
+.container {
+  /* flex 레이아웃 배치 전용기능 
+  float나 inline-block등 이용한 기본 방식보다
+  훨씬 강력하고 편리한 기능 */
+  /* flex 자식 요소들은 가로 방향으로 배티되고
+  내용물의 width만큼만 차지하게 됨
+  height는 부모태그의 높이만큼 늘어남 */
+  display: flex;
+
+  /* display: inline-flex; */
+  margin: 0 auto;
+  margin-left: -30px;
+  margin-bottom: auto;
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  flex-direction: row;
+  /* justify-content: start; */
+  justify-content: space-between;
+  align-items: center;
+}
+.container_text {
+  text-align: center !important;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "제주돌담체";
+  color: rgb(139, 227, 31) !important;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.item_flex {
+  /* border: 1px solid rebeccapurple; */
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  min-height: 200px;
+  width: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  font-size: 25px;
+}
+.item_flex_text {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  width: 300px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.item_flex > span {
+  border: 1px solid red;
+}
+
+.map_wrap {
+  width: 100%;
+  height: 700px;
+  border: 1px solid black;
+  padding: 20px 20px 20px 20px;
+}
+.map_text {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "제주돌담체";
+}
+
+/* pc 기준 */
+@media all and (min-width: 1024px) {
+  /* 영상 */
+  .top_text {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    width: 100%;
+  }
+  .container {
+    /* flex 레이아웃 배치 전용기능 
+    float나 inline-block등 이용한 기본 방식보다
+    훨씬 강력하고 편리한 기능 */
+    /* flex 자식 요소들은 가로 방향으로 배티되고
+    내용물의 width만큼만 차지하게 됨
+    height는 부모태그의 높이만큼 늘어남 */
+    display: flex;
+
+    /* display: inline-flex; */
+    margin: 0 auto;
+    margin-left: -30px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    flex-direction: row;
+    /* justify-content: start; */
+    justify-content: space-between;
+  }
+  .item_flex_text {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: auto;
+    width: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    font-size: 25px;
+  }
+  #popupWindow {
+    width: 250px;
+    height: 200px;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    background-color: aliceblue;
+    top: 200px;
+  }
+  .closeBtn {
+    font-size: 14px !important;
+  }
+}
+
+/* 테블릿 기준 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+  }
+  .container_text {
+    font-size: 40px;
+    margin-top: 9px;
+  }
+  .item_flex {
+    width: 500px;
+    height: 100px;
+  }
+  .item_flex_text {
+    height: 100px;
+    width: 300px;
+  }
+
+  .top_text {
+    position: absolute;
+    top: 70px;
+    text-align: center;
+    width: 100%;
+  }
+  .top_text h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+  #popupWindow {
+    width: 250px;
+    height: 200px;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    background-color: aliceblue;
+    top: 200px;
+  }
+  .closeBtn {
+    font-size: 14px !important;
+  }
+}
+
+/* 모바일기준 */
+@media all and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: auto;
+  }
+  .container_text {
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .item_flex {
+    width: 300px;
+    height: auto;
+  }
+  .item_flex_text {
+    /* text-align: center; */
+    height: auto;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .top_text {
+    position: absolute;
+    top: 00px;
+    text-align: center;
+    width: 100%;
+  }
+  .top_text h1 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  #popupWindow {
+    width: 250px;
+    height: 200px;
+    border: 1px solid red;
+    position: fixed;
+    z-index: 3;
+    text-align: center;
+    background-color: aliceblue;
+    top: 200px;
+  }
+  .closeBtn {
+    font-size: 14px !important;
+  }
+}

@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Apa";
+  src: url(../resources/font/RixInooAriDuri\ Regular.ttf);
+}
+@font-face {
+  font-family: "FUNFLOWSURVIVORKR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FUNFLOWSURVIVORKR.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: rgb(243, 243, 243);
+}
+/* pc 기준 */
+@media all and (min-width: 1024px) {
+  /* 영상 */
+
+  .faq_wrap {
+    border: 2px solid rgb(26, 240, 15);
+    /* background-color: rgba(255, 255, 255, 0.568);
+      color: inherit; */
+    padding: 10px;
+    padding-right: 50px;
+    font-family: "FUNFLOWSURVIVORKR";
+    margin: 0 auto;
+    width: 800px;
+    height: 700px;
+    margin-top: 100px;
+  }
+
+  .faq_wrap h4 {
+    border: #60c353 solid 2px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+  }
+
+  .faq h2 {
+    /* font-family: "Noto Serif KR", serif;
+		font-size: 38px; */
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 50px;
+
+    /* color: #535353; */
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 20px !important;
+  }
+  .answer {
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-indent: 2em;
+  }
+  .faq_wrap ul {
+    margin-left: 50px;
+  }
+}
+
+/* 테블릿 기준 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .faq h2 {
+    /* font-family: "Noto Serif KR", serif;
+		font-size: 38px; */
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+    /* color: #535353; */
+  }
+  .faq_wrap h4 {
+    border: #60c353 solid 2px;
+    width: 110px;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 220px;
+    margin-bottom: 50px;
+  }
+
+  .faq_wrap {
+    border: 2px solid rgb(26, 240, 15);
+
+    /* background-color: rgba(255, 255, 255, 0.568);
+		color: inherit; */
+    padding: 10px;
+    padding-right: 50px;
+    font-family: "FUNFLOWSURVIVORKR";
+    margin: 0 auto;
+    width: 600px;
+    height: 700px;
+    margin-top: 100px;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 19px !important;
+  }
+  .answer {
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-indent: 1em;
+  }
+  .faq_wrap ul {
+    margin-left: 50px;
+  }
+}
+
+/* 모바일기준 */
+@media all and (max-width: 767px) {
+  .faq h2 {
+    /* font-family: "Noto Serif KR", serif;
+		font-size: 38px; */
+    margin-top: 5%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 30px;
+
+    /* color: #535353; */
+  }
+  .faq_wrap h4 {
+    border: #60c353 solid 2px;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+  }
+
+  .faq_wrap {
+    border: 2px solid rgb(26, 240, 15);
+    /* background-color: rgba(255, 255, 255, 0.568);
+		color: inherit; */
+    padding: 10px;
+    padding-right: 50px;
+    font-family: "FUNFLOWSURVIVORKR";
+    margin: 0 auto;
+    width: 400px;
+    height: 700px;
+    margin-top: 100px;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 15px !important;
+  }
+  .answer {
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-indent: 1em;
+  }
+  .faq_wrap ul {
+    margin-left: 50px;
+  }
+}
+.faq_wrap > ul > li {
+  list-style: none;
+}
+button > span {
+  font-weight: bold;
+  color: rgb(88, 245, 91);
+}
+.answer > span {
+  font-weight: bold;
+  color: rgb(88, 245, 91);
+}
+
+button {
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #60c353;
+  background: rgba(255, 255, 255, 0.151);
+}
+button:hover {
+  font-weight: bold;
+  color: rgb(88, 245, 91);
+}
+
+.navbar {
+  font-family: "Apa";
+}
+.navbar .login_icon {
+  position: absolute;
+  float: right;
+}
+
+/* header{
+  width: 100%;
+  height: 50%;
+
+} */
+
+tr {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+}
+.row {
+  left: 800px;
+}
+.login_icon {
+  width: 300px;
+  position: absolute;
+  float: right;
+  padding: 10px 15px;
+  margin-top: -12px;
+  margin-right: -10px;
+  margin-bottom: 8px;
+  margin-left: -180px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.navbar-brand img {
+  width: 80px !important;
+  margin-left: -15px;
+  margin-top: -15px;
+  z-index: 10;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+/* nav menu 마우스 올릴시 색바뀜 */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #60c353 !important;
+}
+
+.login_icon img {
+  display: inline;
+  width: 24px;
+  height: 24px;
+  left: -120px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.login_icon span {
+  position: absolute;
+  display: inline-block;
+  font-size: 5px;
+  text-align: center;
+  margin-top: 24px;
+  margin-left: -155px;
+}
+#wrap {
+  position: relative;
+  width: 1200px;
+  height: 0;
+  padding-top: 56.25%;
+}
+
+#wrapper {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  overflow: auto;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+}
+.jumbotron {
+  width: 100%;
+  height: 30%;
+  position: relative;
+  margin-top: 50px;
+  height: 200px;
+  z-index: 1;
+}
+#wrapper a {
+  text-decoration: none;
+  /* margin: 10px 30px; */
+  font-weight: bold;
+  color: #757bf6;
+  float: left;
+  margin-left: 4px;
+}
+#wrapper a img {
+  width: 25px;
+  height: 25px;
+  line-height: 30px;
+  padding-left: 15px;
+  margin-left: 6px;
+}
+
+.volum_icon {
+  width: 200px;
+  height: 30px;
+  background-color: lightgray;
+  opacity: 0.6;
+  border-radius: 5px;
+  border: 2px solid black;
+  position: absolute;
+
+  margin-top: 7px;
+}
+
+/* 로그인아이콘 넓이 990이하시 사라짐 */
+.on {
+  display: none;
+}
+.warp_font {
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+}
+.wrap_font > div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+/* 회사 소개 글 영역 */
+.jumbotron {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: 50px;
+  height: 200px;
+  z-index: 1;
+  overflow: auto;
+}
+/* .jumbotron{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin-top: 0px;
+  text-align: center;
+  position: static;
+} */
+.jumbotron ul {
+  margin-left: -100px;
+  text-align: center;
+}
+.jumbotron ul li {
+  text-align: center;
+}
+.slide {
+  width: 450px;
+  height: 350px !important;
+  position: absolute;
+  z-index: 30;
+  display: inline;
+}
+
+footer {
+  display: block;
+  margin-top: 200px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: lightgreen;
+}
+footer h3 {
+  height: 200px;
+  line-height: 120px;
+}
+address {
+  margin-top: -110px;
+  text-align: center;
+  margin-left: 15px;
+}
+.final {
+  font-family: "Humanbumsuk";
+  color: #60c353;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+}
+.final2 {
+  margin-left: 5px;
+}
+
+.final_wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+.final1:hover {
+  background-color: rgba(102, 255, 102, 0.8) !important;
+  color: lightpink;
+}
+.final2:hover {
+  background-color: rgba(102, 255, 102, 0.8) !important;
+  color: lightpink;
+}
+.img_logo {
+  width: 30px;
+  padding-left: 6px;
+}
+th {
+  width: 50px;
+}
+.title {
+  width: 80px;
+}
+.uniq {
+  color: red;
+}
+.videos_vegas {
+  width: 50%;
+  height: 30% !important;
+  overflow: hidden;
+}
+
+.vegas-container {
+  width: 100%;
+  height: 300px !important;
+}
+.navbar-brand img {
+  width: 65px !important;
+  height: 50px;
+  margin-left: -15px;
+}
+/* nav menu 마우스 올릴시 색바뀜 */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #60c353 !important;
+}
+.table {
+  color: grey;
+  font-family: "Humanbumsuk" !important;
+  background-color: lightyellow;
+  margin: 0 auto;
+  font-size: 18px;
+  width: 600px;
+  display: block;
+}
+
+.b {
+  color: #60c353;
+  font-family: "apa";
+}
+
+.b h3 {
+  margin-top: 50px;
+  margin-left: 30%;
+}
+@font-face {
+  font-family: "Humanbumsuk";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Humanbumsuk.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.faq_top {
+  display: block;
+  /* background: green; */
+  text-align: center;
+  float: left;
+  margin-top: -100px;
+  margin-left: 200px;
+}
+.wrap {
+  width: 100%;
+  height: 400px;
+  /* background: blue; */
+  margin-top: 100px;
+  margin: 0 auto;
+  float: left;
+  display: block;
+}
+.que {
+  border-bottom: 1px solid black;
+  float: left;
+  width: 500px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: inline;
+}
+.t_icon {
+  float: left;
+}

@@ -1,0 +1,122 @@
+ /* 페이지 전체에 적용 */
+
+ @charset "utf-8";
+
+ @font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media  (max-width: 767px) {
+  .HW > p {
+    font-size: 24px;
+  }
+  .slogan > h1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .HW > p {
+    font-size: 30px;
+  }
+  .slogan > h1 {
+    font-size: 24px;
+  }
+
+}
+
+
+/* ----------------------------popup --------------- */
+
+.main_notice_pop .btn_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* ----------------------------popup --------------- */
+
+#bs-example-navbar-collapse-1 > ul > li:hover{
+  transition: ease 1s;
+  background: pink;
+}
+#bs-example-navbar-collapse-1 > ul > li > ul > li > a:hover {
+  transition: ease 1s;
+  background: skyblue !important
+}
+
+  * {
+    font-family: 'GongGothicMedium' !important;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+
+ body {
+  background: beige;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+
+/* ----------------------------- slide_box ---------------------------------- */
+.slide_box{
+  width: 1200px;
+  height: 300px;
+  background: beige;    
+  /* 헤더 박스 자식들의 float 해제 */
+  clear: both;  
+  /* 앞서 float 사용 후 float 해제할 경우 반드시 다음 요소에서 */
+  /* float를 해제해 줘야 함. 해제는 보통 clear:both; 를 사용함 */
+  overflow: hidden;
+  position: relative;
+}
+
+/* 슬라이드가 구현될 이미지 영역 코딩 */
+.slide_box > img{
+  /* 부모 박스(.slide_box) 안에서 동작하도록 position: absolute 설정함 */
+  position: absolute;
+  /* 박스에 맞도록 width:100% 설정함 */
+  width: 100%;
+  height: 100%;
+  /* 부드럽게 장면 전환이 이루어지도록 transition:1s 설정함 */
+  /* transition: 1s; */
+}
+
+/* ----------------------------- slide_box ---------------------------------- */
+
+/* ----------------------------- footer ---------------------------------- */
+
+footer {
+  width: 100%;
+  /* display: inline-block; */
+  position: relative;  
+  text-align: center;
+  
+}
+
+footer > ul{
+  list-style: none;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+footer ul > li {
+  float: left;
+}
+footer ul > li > a {
+  color: black;
+}
+footer > span {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px !important
+}
